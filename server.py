@@ -14,7 +14,7 @@ class MainHandler(tornado.web.RequestHandler):
 	    		rijen = []
 	    		for rij in csvreader: rijen.append(rij)
 
-	    		t = tornado.template.Template(template)
+	    		t = tornado.template.Template(template.read())
 
 	    		self.write(t.generate(csv=rijen))
 
