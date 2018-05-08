@@ -10,7 +10,7 @@ class MainHandler(tornado.web.RequestHandler):
 def make_app():
     return tornado.web.Application([
     	(r"/index.php", MainHandler),
-        (r"/(.*)", tornado.web.StaticFileHandler, {path: "."}),
+        (r"/(.*)", tornado.web.StaticFileHandler, {'path': "."}),
     ])
 
 if __name__ == "__main__":
