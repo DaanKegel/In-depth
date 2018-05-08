@@ -12,7 +12,7 @@ class MainHandler(tornado.web.RequestHandler):
 	    		csvreader = csv.reader(csvfile)
 
 	    		rijen = []
-	    		for rij in csvreader: rijen.push(rij)
+	    		for rij in csvreader: rijen.append(rij)
 
 	    		t = tornado.template.Template(template)
 
