@@ -6,7 +6,7 @@ import tornado.web
 import csv
 
 class MainHandler(tornado.web.RequestHandler):
-    def get(self):
+    def get(self, i_dont_care):
     	with open('index.html', 'r') as template:
 	    	with open('Essences.csv', 'r') as csvfile:
 	    		csvreader = csv.reader(csvfile)
