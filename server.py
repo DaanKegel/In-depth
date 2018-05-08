@@ -3,13 +3,24 @@
 import tornado.ioloop
 import tornado.web
 
+import csv
+
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.write("Hello, world")
+    	with open('index.html', 'r') as template:
+	    	with open('Essences.csv', 'r') as csvfile:
+	    		csvreader = csv.reader(csvfile)
+
+	    		rijen = []
+	    		for rij in csvreader: rijen.push(rij)
+
+	    		t = tornado.template.Template(template)
+
+	    		self.write(t.generate(csv=rijen))
 
 def make_app():
     return tornado.web.Application([
-    	(r"/index.php", MainHandler),
+    	(r"/(|index.php)", MainHandler),
         (r"/(.*)", tornado.web.StaticFileHandler, {'path': "."}),
     ])
 
