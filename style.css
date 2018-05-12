@@ -10,6 +10,14 @@ body{
     font-size: 20px;
 }
 
+h1{
+	font-size: 22px;
+}
+
+h2{
+	font-size: 20px;
+}
+
 #topbar{
 	height: 60px;
 	background-color: rgb(2, 46, 117);
@@ -37,22 +45,34 @@ body{
 	font-size: 12px;
 }
 
+#summary{
+	position: relative;
+	top: 10px;
+}
+
+#summary-title{
+}
+
+#summary-content{
+	padding: 12px;
+	border: 1px solid white;
+	border-radius: 6px;
+}
+
 #essences-title{
-	font-size: 22px;
 }
 
 #essences-content{
 }
 
 #todo-title{
-	font-size: 22px;
 }
 
 #todo-content{
 }
 
 #tips-title{
-	font-size: 22px;
+	
 }
 
 #tips-content{
