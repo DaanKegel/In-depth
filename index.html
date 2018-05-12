@@ -8,8 +8,33 @@
 			In-depth 
 		</div>
 		<div id="unit">
-			<div id="unit-title">Essences:</div>
-			<div id="unit-content">
+			<div id="essences-title">Essences:</div>
+			<br>
+			<div id="essences-content">
+				<table>
+				{% for rij in csv %}
+					<tr>
+						<td><img class="currency_small" src="currency.png" alt="Currency icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</img>{{ rij[4] }}</td><td>{{ rij[0] }}</td><td>{{ rij[1] }}</td><td>{{ rij[5] }}</td>
+					</tr>
+				{% end %}
+				</table>
+			</div>
+			<br><br>
+			<div id="todo-title">Things to do:</div>
+			<br>
+			<div id="todo-content">
+				<table>
+				{% for rij in csv %}
+					<tr>
+						<td><img class="currency_small" src="currency.png" alt="Currency icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</img>{{ rij[4] }}</td><td>{{ rij[0] }}</td><td>{{ rij[1] }}</td><td>{{ rij[5] }}</td>
+					</tr>
+				{% end %}
+				</table>
+			</div>
+			<br><br>
+			<div id="tips-title">Tips:</div>
+			<br>
+			<div id="tips-content">
 				<table>
 				{% for rij in csv %}
 					<tr>
