@@ -21,10 +21,15 @@ body{
 	font-size: 12px;
 }
 
+#unit-title{
+}
+
+#unit-content{
+}
+
 td{
 	position: relative;
-	padding-top: 4px;
-	padding-bottom: 4px;
+	height: 25px;
 }
 
 .currency_small{
