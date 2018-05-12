@@ -11,10 +11,25 @@ body{
 }
 
 #topbar{
-	font-size: 26px;
-	padding: 20px;
+	height: 60px;
 	background-color: rgb(2, 46, 117);
 	color: rgb(237, 237, 237);
+}
+
+#logo{
+	top: 15px;
+	left: 20px;
+	display: inline-block;
+	position: absolute;
+	font-size: 26px;
+}	
+
+#user{
+	display: inline-block;
+	top: 8px;
+	right: 30px;
+	position: absolute;
+	font-size: 18px;
 }
 
 #unit{
