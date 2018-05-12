@@ -12,7 +12,7 @@
 			<br>
 			<div id="essences-content">
 				<table>
-				{% for rij in csv %}
+				{% for rij in essences %}
 					<tr>
 						<td><img class="currency_small" src="currency.png" alt="Currency icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</img>{{ rij[4] }}</td><td>{{ rij[0] }}</td><td>{{ rij[1] }}</td><td>{{ rij[5] }}</td>
 					</tr>
@@ -24,7 +24,7 @@
 			<br>
 			<div id="todo-content">
 				<table>
-				{% for rij in csv %}
+				{% for rij in todos %}
 					<tr>
 						<td><img class="currency_small" src="currency.png" alt="Currency icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</img>{{ rij[4] }}</td><td>{{ rij[0] }}</td><td>{{ rij[1] }}</td><td>{{ rij[5] }}</td>
 					</tr>
@@ -36,7 +36,7 @@
 			<br>
 			<div id="tips-content">
 				<table>
-				{% for rij in csv %}
+				{% for rij in tips %}
 					<tr>
 						<td><img class="currency_small" src="currency.png" alt="Currency icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</img>{{ rij[4] }}</td><td>{{ rij[0] }}</td><td>{{ rij[1] }}</td><td>{{ rij[5] }}</td>
 					</tr>
